@@ -1,0 +1,33 @@
+{
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	},
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.stickyScroll.enabled": true,
+	// "workbench.sideBar.location": "right",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.organizeImports": true
+	},
+	"editor.inlayHints.fontFamily": "Courier New",
+	"editor.inlayHints.fontSize": 14,
+	"workbench.colorCustomizations": {
+		"editorInlayHint.foreground": "#868686f0",
+		"editorInlayHint.background": "#3d3d3d48",
+		"editorInlayHint.typeForeground": "#fdb6fdf0",
+		"editorInlayHint.parameterForeground": "#fdb6fdf0",
+		"activityBar.background": "#581522",
+		"titleBar.activeBackground": "#7B1D30",
+		"titleBar.activeForeground": "#FEFBFB"
+	},
+	"window.title": "${rootPath}${separator}${dirty}${activeEditorShort}",
+	"workbench.sideBar.location": "right",
+	"workbench.colorTheme": "Abyss",
+	"breadcrumbs.enabled": true,
+	"explorer.autoReveal": true,
+	"js/ts.implicitProjectConfig.checkJs": true,
+	"files.exclude": {
+		"node_modules": true
+	}
+}

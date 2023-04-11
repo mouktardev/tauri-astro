@@ -1,0 +1,77 @@
+---
+import "@styles/global.css";
+
+const defaultSEO = {
+	author: "Mouktar",
+	title: "Mouktar | Home",
+	description: "Projects and portfolio website",
+	type: "website",
+};
+const { SEO = defaultSEO } = Astro.props;
+---
+
+<html class="scroll-smooth" lang="en">
+	<head>
+		<title>{SEO.title}</title>
+		<!-- <link rel="canonical" href={url} /> -->
+		<meta name="author" content={SEO.author} />
+		<meta name="description" content={SEO.description} />
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height,viewport-fit=cover,initial-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:type" content={SEO.type} />
+		<!-- <meta property="og:url" content={url} /> -->
+		<meta property="og:title" content={SEO.title} />
+		<meta property="og:description" content={SEO.description} />
+		<meta property="og:image" content="/avatar/mouktar.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={SEO.title} />
+		<meta name="twitter:description" content={SEO.description} />
+		<meta name="twitter:image" content={`/asset/Banner.png`} />
+		<link rel="icon" type="image/x-icon" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/> -->
+		<script>
+			const root = document.documentElement;
+			const theme = localStorage.getItem("theme");
+			if (
+				theme === "dark" ||
+				(!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+			) {
+				root.classList.add("dark");
+			} else {
+				root.classList.remove("dark");
+			}
+		</script>
+	</head>
+	<body
+		class="relative min-h-screen flex flex-col bg-white dark:bg-neutral-900 font-open overflow-x-hidden"
+	>
+		<div class="fixed -z-1 inset-0 overflow-hidden">
+			<div
+				class="absolute inset-0 bg-gradient-lines-light dark:bg-gradient-lines-dark bg-[length:7em_7em] opacity-20 dark:opacity-10 mask"
+			>
+			</div>
+			<!-- <AnimatedGradient client:load /> -->
+		</div>
+		<header>
+			<!-- <header class=""> -->
+		</header>
+		<slot />
+		<!-- <p>Built with <a href="https://astro.build">{Astro.generator}</a></p> -->
+	</body>
+</html>
