@@ -1,5 +1,4 @@
 # Tauri-Astro-React
-
 ![Banner](/public/asset/Banner.png)
 
 Currently, I am learning Tauri API and Rust Project, and as part of this endeavor am creating an image compressor app using astro and react for forntend, I am able to open local files and display one or multiple images along with their respective file names in
