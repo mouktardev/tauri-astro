@@ -2,7 +2,7 @@
 
 ![Banner](/public/asset/Banner.png)
 
-my Astro Tauri boilerplate template
+Tauri astro boilerplate template with tailwindcss prettier and more...
 
 example:
 
