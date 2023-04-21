@@ -29,7 +29,8 @@ input[type="search"]::-webkit-search-results-decoration {
 textarea,
 input[type="text"],
 input[type="email"],
-input[type="search"] {
+input[type="search"],
+input[type="file"] {
 	-webkit-appearance: none;
 }
 

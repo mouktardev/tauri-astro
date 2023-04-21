@@ -1,127 +1,125 @@
-import { ButtonsContainer, FadeRight } from "@anim/ani";
-import Title from "@components/Title";
-import { motion } from "framer-motion";
 import * as Icons from "./Icons";
-
 type Props = {};
-
 export default function PreviewIcons({}: Props) {
 	return (
 		<div>
-			<Title title="Icons" />
-			<motion.div
-				className="w-60 flex gap-3 items-center justify-center flex-wrap"
-				variants={ButtonsContainer}
-				initial={"hidden"}
-				animate={"visible"}
-			>
-				<motion.div variants={FadeRight}>
+			<div className="w-60 flex gap-3 items-center justify-center flex-wrap">
+				<div>
+					<Icons.Close className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
+				</div>
+				<div>
+					<Icons.Minimize className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
+				</div>
+				<div>
+					<Icons.Maximize className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
+				</div>
+				<div>
 					<Icons.AirPlay className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Ban className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Exclamation className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Gear className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Dots className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Discord className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Day className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Copy className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Copied className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Chevron className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Calender className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Battery className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.List className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Location className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Night className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Map className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Lyrics className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Pagination className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Pause className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.People className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Play className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					{" "}
 					<Icons.Search className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Server className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Signal className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Skip className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Spinner className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Steam className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Store className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Tiktok className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Twitter className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.VolumeHigh className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.VolumeMute className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Wifi className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.Youtube className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-				<motion.div variants={FadeRight}>
+				</div>
+				<div>
 					<Icons.instagram className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
-				</motion.div>
-			</motion.div>
+				</div>
+			</div>
 		</div>
 	);
 }

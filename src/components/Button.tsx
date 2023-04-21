@@ -8,6 +8,7 @@ type Props = {
 	onClick?: any;
 	onStart?: any;
 	className?: string;
+	id?: string;
 };
 
 export default function Button({
@@ -15,6 +16,7 @@ export default function Button({
 	onClick,
 	onStart,
 	className,
+	id,
 }: Props) {
 	let [pressing, setPressing] = useState(false);
 	return (
@@ -36,6 +38,7 @@ export default function Button({
 			variants={pushButton}
 			transition={transition2}
 			className={`flex items-center justify-center  ${className}`}
+			id={id}
 		>
 			{children}
 		</motion.button>

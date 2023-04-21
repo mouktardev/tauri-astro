@@ -2,6 +2,14 @@
 	"extends": "astro/tsconfigs/strict",
 	"allowSyntheticDefaultImports": true,
 	"compilerOptions": {
+		"allowJs": false,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "Node",
+		"isolatedModules": true,
+		"noEmit": true,
 		"baseUrl": ".",
 		"paths": {
 			"@ts/*": ["src/ts/*"],

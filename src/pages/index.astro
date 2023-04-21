@@ -1,12 +1,10 @@
 ---
 import FileListButton from "@components/FileListButton";
-import ThemeToggle from "@components/ThemeToggle";
 import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-	<div class="ml-auto p-4">
-		<ThemeToggle client:load />
-	</div>
+	<!-- <PreviewIcons client:load /> -->
+	<!-- <App client:only /> -->
 	<FileListButton client:only />
 </BaseLayout>

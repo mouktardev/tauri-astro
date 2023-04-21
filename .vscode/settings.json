@@ -16,10 +16,7 @@
 		"editorInlayHint.foreground": "#868686f0",
 		"editorInlayHint.background": "#3d3d3d48",
 		"editorInlayHint.typeForeground": "#fdb6fdf0",
-		"editorInlayHint.parameterForeground": "#fdb6fdf0",
-		"activityBar.background": "#581522",
-		"titleBar.activeBackground": "#7B1D30",
-		"titleBar.activeForeground": "#FEFBFB"
+		"editorInlayHint.parameterForeground": "#fdb6fdf0"
 	},
 	"window.title": "${rootPath}${separator}${dirty}${activeEditorShort}",
 	"workbench.sideBar.location": "right",
@@ -28,6 +25,6 @@
 	"explorer.autoReveal": true,
 	"js/ts.implicitProjectConfig.checkJs": true,
 	"files.exclude": {
-		"node_modules": true
+		// "node_modules": true
 	}
 }

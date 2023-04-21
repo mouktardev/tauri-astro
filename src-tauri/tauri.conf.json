@@ -12,28 +12,24 @@
 	},
 	"tauri": {
 		"allowlist": {
-			"all": false,
-			"shell": {
-				"all": false,
-				"open": true
+			"all": true,
+			"fs": {
+				"all": true,
+				"scope": ["**"]
 			},
 			"dialog": {
-				"all": true,
-				"open": true,
-				"save": true
-			},
-			"protocol": {
-				"asset": true
-			},
-			"fs": {
-				"readFile": true,
-				"writeFile": true
-			},
-			"path": {
 				"all": true
 			},
-			"notification": {
-				"all": true
+			"window": {
+				"all": false,
+				"close": true,
+				"hide": true,
+				"show": true,
+				"maximize": true,
+				"minimize": true,
+				"unmaximize": true,
+				"unminimize": true,
+				"startDragging": true
 			}
 		},
 		"bundle": {
@@ -77,12 +73,14 @@
 		},
 		"windows": [
 			{
+				"transparent": true,
+				"label": "main",
 				"title": "image-compressor",
 				"fullscreen": false,
-				"fileDropEnabled": true,
-				"height": 600,
-				"width": 800,
-				"resizable": true
+				"width": 1000,
+				"height": 700,
+				"resizable": true,
+				"fileDropEnabled": false
 			}
 		]
 	}

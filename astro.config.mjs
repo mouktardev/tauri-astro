@@ -1,11 +1,24 @@
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-
-import node from "@astrojs/node";
+import copy from "rollup-plugin-copy";
 
 // https://astro.build/config
 export default defineConfig({
+	vite: {
+		plugins: [
+			copy({
+				targets: [
+					{
+						src: "node_modules/@mxsir/image-tiny/dist/pngtiny-custom.wasm",
+						dest: "public",
+					},
+				],
+				verbose: true,
+				hook: "writeBundle",
+			}),
+		],
+	},
 	integrations: [
 		react(),
 		tailwind({
@@ -14,8 +27,8 @@ export default defineConfig({
 			},
 		}),
 	],
-	output: "server",
-	adapter: node({
-		mode: "standalone",
-	}),
+	// output: "server",
+	// adapter: node({
+	// 	mode: "standalone",
+	// }),
 });

@@ -1,4 +1,5 @@
 # Tauri-Astro-React
+
 ![Banner](/public/asset/Banner.png)
 
 Currently, I am learning Tauri API and Rust Project, and as part of this endeavor am creating an image compressor app using astro and react for forntend, I am able to open local files and display one or multiple images along with their respective file names in
@@ -44,10 +45,10 @@ export default function FileListButton() {
 
 All commands are run from the root of the project, from a terminal:
 
-| Command          | Action                                      |
-| :--------------- | :------------------------------------------ |
-| `npm install`    | Installs dependencies                       |
-| `npm run tauri dev` | Starts local dev server at `localhost:3000` and lunch app window |
-| `npm run tauri build`  | Build your production app to `./dist/`     |
-| `npm run format` | prettier format files                       |
-| `npm run check`  | prettier check formated files               |
+| Command               | Action                                                           |
+| :-------------------- | :--------------------------------------------------------------- |
+| `npm install`         | Installs dependencies                                            |
+| `npm run tauri dev`   | Starts local dev server at `localhost:3000` and lunch app window |
+| `npm run tauri build` | Build your production app to `./dist/`                           |
+| `npm run format`      | prettier format files                                            |
+| `npm run check`       | prettier check formated files                                    |

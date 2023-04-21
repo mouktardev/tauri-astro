@@ -1,10 +1,11 @@
 ---
+import Nav from "@components/Nav";
 import "@styles/global.css";
 
 const defaultSEO = {
-	author: "Mouktar",
-	title: "Mouktar | Home",
-	description: "Projects and portfolio website",
+	author: "Image Compressor",
+	title: "Home",
+	description: "App for compressing images, png and gifs",
 	type: "website",
 };
 const { SEO = defaultSEO } = Astro.props;
@@ -39,12 +40,6 @@ const { SEO = defaultSEO } = Astro.props;
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-			rel="stylesheet"
-		/> -->
 		<script>
 			const root = document.documentElement;
 			const theme = localStorage.getItem("theme");
@@ -59,18 +54,17 @@ const { SEO = defaultSEO } = Astro.props;
 		</script>
 	</head>
 	<body
-		class="relative min-h-screen flex flex-col bg-white dark:bg-neutral-900 font-open overflow-x-hidden"
+		class="relative min-h-screen flex flex-col bg-white dark:bg-neutral-900 font-open"
 	>
-		<div class="fixed -z-1 inset-0 overflow-hidden">
+		<header>
+			<Nav client:only />
+		</header>
+		<!-- <div class="fixed -z-1 inset-0 overflow-hidden">
 			<div
 				class="absolute inset-0 bg-gradient-lines-light dark:bg-gradient-lines-dark bg-[length:7em_7em] opacity-20 dark:opacity-10 mask"
 			>
 			</div>
-			<!-- <AnimatedGradient client:load /> -->
-		</div>
-		<header>
-			<!-- <header class=""> -->
-		</header>
+		</div> -->
 		<slot />
 		<!-- <p>Built with <a href="https://astro.build">{Astro.generator}</a></p> -->
 	</body>
