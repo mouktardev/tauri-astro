@@ -27,6 +27,8 @@ export default defineConfig({
 			},
 		}),
 	],
+	server: { port: 1420 }
+
 	// output: "server",
 	// adapter: node({
 	// 	mode: "standalone",

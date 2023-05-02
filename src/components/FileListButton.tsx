@@ -23,7 +23,7 @@ export default function FileListButton() {
       setImages([...selected].map((path) => convertFileSrc(path)))
     } else if (selected === null) {
       // user cancelled the selection
-      setImages([])
+    setImages([])
     } else {
       // user selected a single directory
       setImages([...selected].map((path) => convertFileSrc(path)))

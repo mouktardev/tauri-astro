@@ -47,7 +47,7 @@ All commands are run from the root of the project, from a terminal:
 | Command               | Action                                                           |
 | :-------------------- | :--------------------------------------------------------------- |
 | `npm install`         | Installs dependencies                                            |
-| `npm run tauri dev`   | Starts local dev server at `localhost:3000` and lunch app window |
+| `npm run tauri dev`   | Starts local dev server at `localhost:1420` and lunch app window |
 | `npm run tauri build` | Build your production app to `./dist/`                           |
 | `npm run format`      | prettier format files                                            |
 | `npm run check`       | prettier check formated files                                    |
